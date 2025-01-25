@@ -36,7 +36,7 @@ class Api
 
     private Client $client;
 
-    public function __construct(string $username, string $apiKey, string $apiUrl = null)
+    public function __construct(string $username, string $apiKey, ?string $apiUrl = null)
     {
         $this->apiUrl = $apiUrl ?? 'https://app.smartemailing.cz/api/v3/';
         $this->client = new Client([

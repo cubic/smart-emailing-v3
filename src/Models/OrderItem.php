@@ -110,7 +110,7 @@ class OrderItem extends Model
         return $this->quantity;
     }
 
-    public function setQuantity(int $quantity, string $unit = null): self
+    public function setQuantity(int $quantity, ?string $unit = null): self
     {
         $this->quantity = $quantity;
         $this->unit = $unit;

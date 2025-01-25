@@ -23,7 +23,7 @@ class ContactListStatus extends Model
      */
     protected string $status = self::CONFIRMED;
 
-    public function __construct(int $id = null, ?string $status = self::CONFIRMED)
+    public function __construct(?int $id = null, ?string $status = self::CONFIRMED)
     {
         if ($id !== null) {
             $this->setId($id);

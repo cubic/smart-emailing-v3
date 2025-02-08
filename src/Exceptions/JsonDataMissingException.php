@@ -6,7 +6,7 @@ namespace SmartEmailing\v3\Exceptions;
 
 class JsonDataMissingException extends \Exception
 {
-    public function __construct(?string $key = null, ?int $code = 500, \Exception $previous = null)
+    public function __construct(?string $key = null, ?int $code = 500, ?\Exception $previous = null)
     {
         parent::__construct('The JSON response is missing' . ($key ? sprintf(
             " '%s' value",

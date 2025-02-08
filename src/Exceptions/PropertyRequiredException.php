@@ -10,7 +10,7 @@ class PropertyRequiredException extends \LogicException
         string $propertyName,
         ?string $customMessage = null,
         ?int $code = 500,
-        \Exception $previous = null
+        ?\Exception $previous = null
     ) {
         $message = $customMessage ?? sprintf('Property %s is required to be set', $propertyName);
         parent::__construct($message, $code ?? 500, $previous);

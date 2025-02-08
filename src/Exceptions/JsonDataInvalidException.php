@@ -6,7 +6,7 @@ namespace SmartEmailing\v3\Exceptions;
 
 class JsonDataInvalidException extends JsonDataMissingException
 {
-    public function __construct(string $key, string $functionCheck, ?int $code = 500, \Exception $previous = null)
+    public function __construct(string $key, string $functionCheck, ?int $code = 500, ?\Exception $previous = null)
     {
         parent::__construct(sprintf(
             "The JSON value '%s' is invalid - %s",

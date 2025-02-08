@@ -15,7 +15,7 @@ class RequestException extends \RuntimeException
 
     public function __construct(
         AbstractResponse $response,
-        RequestInterface $request = null,
+        ?RequestInterface $request = null,
         ?string $message = null,
         int $code = 0,
         ?\Exception $exception = null
